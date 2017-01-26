@@ -45,7 +45,7 @@ android {
         userOrg = 'auron'
         groupId = 'com.auron'
         artifactId = 'permission-manage'
-        publishVersion = '1.1.5'
+        publishVersion = '1.1.6'
     }
 
 }
