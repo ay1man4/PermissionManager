@@ -103,23 +103,22 @@ public class ActivityMultiplePermission extends ActivityManagePermission {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
         switch (item.getItemId()) {
             case R.id.ask_single_activity:
                 this.finish();
                 return true;
-
             case R.id.ask_multi_activity:
-
-                return true;
-            case R.id.ask_annotation :
-                startActivity(new Intent(ActivityMultiplePermission.this, ActivityAnnotation.class));
-                return true;
-            case R.id.check_permission:
-                startActivity(new Intent(ActivityMultiplePermission.this, ActivityCheckPermission.class));
                 this.finish();
                 return true;
-
+            case R.id.ask_single_fragment :
+                startActivity(new Intent(ActivityMultiplePermission.this, ActivityContainer.class));
+                return true;
+//            case R.id.ask_annotation :
+//                startActivity(new Intent(ActivityMultiplePermission.this, ActivityAnnotation.class)); work in progress ;-)
+ //               return true;
+            case R.id.check_permission:
+                startActivity(new Intent(ActivityMultiplePermission.this, ActivityCheckPermission.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

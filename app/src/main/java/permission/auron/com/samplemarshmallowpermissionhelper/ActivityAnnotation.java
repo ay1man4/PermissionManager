@@ -23,6 +23,7 @@ import permission.auron.com.samplemarshmallowpermissionhelper.checkPermission.Ac
 /**
  * Created by luca on 13/09/16.
  */
+// work in progress
 public class ActivityAnnotation extends ActivityManagePermission {
 
     private static final int REQUEST_IMAGE_CAPTURE = 1;

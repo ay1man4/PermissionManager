@@ -26,8 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityMultiplePermission" />
-        <activity android:name=".checkPermission.ActivityCheckPermission" />
+        <activity android:name=".ActivityMultiplePermission"   android:configChanges="screenSize|orientation" />
+        <activity android:name=".checkPermission.ActivityCheckPermission"   android:configChanges="screenSize|orientation" />
+        <activity android:name=".ActivityContainer"   android:configChanges="screenSize|orientation" />
     </application>
 
 </manifest>

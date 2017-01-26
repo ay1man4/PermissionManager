@@ -8,9 +8,11 @@ import java.lang.annotation.Target;
 /**
  * Created by luca on 14/09/16.
  */
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface AskPermission {
 
    String permission() default "";
+
 }

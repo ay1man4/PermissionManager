@@ -99,7 +99,7 @@ public class MainActivity extends ActivityManagePermission {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+        public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.ask_single_activity:
@@ -107,9 +107,12 @@ public class MainActivity extends ActivityManagePermission {
             case R.id.ask_multi_activity:
                 startActivity(new Intent(MainActivity.this, ActivityMultiplePermission.class));
                 return true;
-            case R.id.ask_annotation :
-                startActivity(new Intent(MainActivity.this, ActivityAnnotation.class));
+            case R.id.ask_single_fragment :
+                startActivity(new Intent(MainActivity.this, ActivityContainer.class));
                 return true;
+//            case R.id.ask_annotation :
+//                startActivity(new Intent(MainActivity.this, ActivityAnnotation.class)); work in progress ;-)
+ //               return true;
             case R.id.check_permission:
                 startActivity(new Intent(MainActivity.this, ActivityCheckPermission.class));
                 return true;

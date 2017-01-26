@@ -1,9 +1,13 @@
 package permission.auron.com.samplemarshmallowpermissionhelper.checkPermission;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -14,6 +18,8 @@ import java.util.List;
 
 import permission.auron.com.marshmallowpermissionhelper.ActivityManagePermission;
 import permission.auron.com.marshmallowpermissionhelper.PermissionUtils;
+import permission.auron.com.samplemarshmallowpermissionhelper.ActivityContainer;
+import permission.auron.com.samplemarshmallowpermissionhelper.ActivityMultiplePermission;
 import permission.auron.com.samplemarshmallowpermissionhelper.R;
 
 /**
@@ -90,4 +96,34 @@ public class ActivityCheckPermission extends ActivityManagePermission {
         });
     }
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.ask_single_activity:
+                this.finish();
+                return true;
+            case R.id.ask_multi_activity:
+                startActivity(new Intent(ActivityCheckPermission.this, ActivityMultiplePermission.class));
+                return true;
+            case R.id.ask_single_fragment :
+                startActivity(new Intent(ActivityCheckPermission.this, ActivityContainer.class));
+                return true;
+//            case R.id.ask_annotation :
+//                startActivity(new Intent(ActivityMultiplePermission.this, ActivityAnnotation.class)); work in progress ;-)
+//                return true;
+            case R.id.check_permission:
+             this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }
