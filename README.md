@@ -7,15 +7,18 @@
 [ ![Download](https://api.bintray.com/packages/auron/maven/permission-manage/images/download.svg) ](https://bintray.com/auron/maven/permission-manage/_latestVersion) 
 [![API](https://img.shields.io/badge/API-9%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=9)
  [![GitHub stars](https://img.shields.io/github/stars/RurioLuca/MarshmallowPermissionManager.svg)](https://github.com/RurioLuca/MarshmallowPermissionManager/stargazers)
-
-
+[![GitHub forks](https://img.shields.io/github/forks/RurioLuca/MarshmallowPermissionManager.svg)](https://github.com/RurioLuca/MarshmallowPermissionManager/network) 
+[![GitHub issues](https://img.shields.io/github/issues/RurioLuca/MarshmallowPermissionManager.svg)](https://github.com/RurioLuca/MarshmallowPermissionManager/issues) 
 #### Helper to ask runtime permission on android marshmallow and nougat
 
 
 The library takes care themselves to check whether a permit has already been agreed by the user or not.
 if the user has given consent call the system dialog for the acceptance
 
-![Screen](https://raw.githubusercontent.com/RurioLuca/MarshmallowPermissionManager/master/img/permission.jpg)
+![Logo](https://raw.githubusercontent.com/RurioLuca/MarshmallowPermissionManager/master/img/web_hi_res_400.png)
+
+![Screen](https://raw.githubusercontent.com/RurioLuca/MarshmallowPermissionManager/master/img/screener_20170126.png)
+
 
 ### Requirements
 
@@ -36,7 +39,7 @@ allprojects {
 ```
 ```Gradle
 dependencies {
- compile 'com.auron:permission-manage:1.1.5'
+ compile 'com.auron:permission-manage:1.1.6'
 }
 ```
 
