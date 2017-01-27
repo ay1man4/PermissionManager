@@ -9,6 +9,7 @@
  [![GitHub stars](https://img.shields.io/github/stars/RurioLuca/MarshmallowPermissionManager.svg)](https://github.com/RurioLuca/MarshmallowPermissionManager/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/RurioLuca/MarshmallowPermissionManager.svg)](https://github.com/RurioLuca/MarshmallowPermissionManager/network) 
 [![GitHub issues](https://img.shields.io/github/issues/RurioLuca/MarshmallowPermissionManager.svg)](https://github.com/RurioLuca/MarshmallowPermissionManager/issues) 
+
 #### Helper to ask runtime permission on android marshmallow and nougat
 
 
@@ -19,6 +20,13 @@ if the user has given consent call the system dialog for the acceptance
 
 ![Screen](https://raw.githubusercontent.com/RurioLuca/MarshmallowPermissionManager/master/img/screener_20170126.png)
 
+### Demo
+
+A demo app is available on Google Play:
+
+<a href="https://play.google.com/store/apps/details?id=permission.auron.com.marshmallowpermissionhelper">
+	<img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/it-play-badge.png" height="60" />
+</a>
 
 ### Requirements
 
@@ -221,6 +229,7 @@ Rurio Luca- [rurio.luca@gmail.com](mailto:rurio.luca@gmail.com)
   * [Volo](https://play.google.com/store/apps/details?id=volo.tsc.it.volo)
   * [Volo Oss](https://play.google.com/store/apps/details?id=volontario.volo.tsc.it.volontario)
   * [Gespat](https://play.google.com/store/apps/details?id=gespat.tsc.it.gespat)
+  * [PermissionManager](https://play.google.com/store/apps/details?id=permission.auron.com.marshmallowpermissionhelper)
 
 send me your apps!
 rurio.luca@gmail.com
