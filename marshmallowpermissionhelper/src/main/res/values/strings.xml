@@ -23,5 +23,5 @@
   ~ SOFTWARE.
   -->
 <resources>
-    <string name="app_name">PermissionHelper</string>
+    <string name="app_name">PermissionManager</string>
 </resources>
