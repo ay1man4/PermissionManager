@@ -230,6 +230,7 @@ Rurio Luca- [rurio.luca@gmail.com](mailto:rurio.luca@gmail.com)
   * [Volo Oss](https://play.google.com/store/apps/details?id=volontario.volo.tsc.it.volontario)
   * [Gespat](https://play.google.com/store/apps/details?id=gespat.tsc.it.gespat)
   * [PermissionManager](https://play.google.com/store/apps/details?id=permission.auron.com.marshmallowpermissionhelper)
+  * [2017 Best Status - Quotes](https://play.google.com/store/apps/details?id=com.latest.best.whatsapp.status)
 
 send me your apps!
 rurio.luca@gmail.com
