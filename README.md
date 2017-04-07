@@ -222,7 +222,7 @@ Rurio Luca- [rurio.luca@gmail.com](mailto:rurio.luca@gmail.com)
 
 [![Linkedin](https://raw.githubusercontent.com/RurioLuca/MarshmallowPermissionManager/master/img/social/linkedin-icon.png) ](https://it.linkedin.com/in/luca-rurio-5a4462107)
 
-###App using MarshmallowPermissionManager
+###App using PermissionHelper
 =======
 
   * [Material Qr](https://play.google.com/store/apps/details?id=qrreader.com.studios.it.qrreader)
