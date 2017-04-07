@@ -231,7 +231,9 @@ Rurio Luca- [rurio.luca@gmail.com](mailto:rurio.luca@gmail.com)
   * [Gespat](https://play.google.com/store/apps/details?id=gespat.tsc.it.gespat)
   * [PermissionManager](https://play.google.com/store/apps/details?id=permission.auron.com.marshmallowpermissionhelper)
   * [2017 Best Status - Quotes](https://play.google.com/store/apps/details?id=com.latest.best.whatsapp.status)
-
+  * [My Notebook](https://play.google.com/store/apps/details?id=com.notes.dairy.notebook)
+  * [Styled Map With Pager](https://play.google.com/store/apps/details?id=com.thebrownarrow.styledmapwithpager)
+  
 send me your apps!
 rurio.luca@gmail.com
 
