@@ -148,7 +148,6 @@ public class ActivityManagePermission extends AppCompatActivity {
 
                 permissionResult.permissionDenied();
 
-
             }
         }
 

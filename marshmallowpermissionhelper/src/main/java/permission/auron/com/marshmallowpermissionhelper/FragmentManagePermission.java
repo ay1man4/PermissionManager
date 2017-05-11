@@ -115,7 +115,7 @@ public class FragmentManagePermission extends Fragment {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-
+        Log.d("LIBRARY","onRequestPermissionsResult");
 
         if (requestCode != KEY_PERMISSION) {
             return;
@@ -123,15 +123,19 @@ public class FragmentManagePermission extends Fragment {
         boolean granted = true;
         List<String> permissionDenied = new LinkedList<>();
 
-        for (int grantResult : grantResults) {
-            if (!(grantResults.length > 0 && grantResult == PackageManager.PERMISSION_GRANTED))
+        for (int i = 0; i < grantResults.length; i++) {
+
+            if (!(grantResults.length > 0 && grantResults[i] == PackageManager.PERMISSION_GRANTED)) {
                 granted = false;
+                permissionDenied.add(permissions[i]);
+            }
+
         }
+
         if (permissionResult != null) {
             if (granted) {
                 permissionResult.permissionGranted();
             } else {
-
                 for (String s : permissionDenied) {
                     if (!shouldShowRequestPermissionRationale(s)) {
                         permissionResult.permissionForeverDenied();

@@ -8,6 +8,7 @@ import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -58,12 +59,14 @@ public class MainActivity extends ActivityManagePermission {
                     public void permissionDenied() {
                         //permission denied
                         //replace with your action
+                        Log.d(TAG, "permissionDenied");
                     }
 
                     @Override
                     public void permissionForeverDenied() {
                         //permission denied
                         //replace with your action
+                        Log.d(TAG, "permissionForeverDenied");
                         showDialog();
 
                     }
@@ -99,7 +102,7 @@ public class MainActivity extends ActivityManagePermission {
     }
 
     @Override
-        public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.ask_single_activity:
@@ -107,12 +110,12 @@ public class MainActivity extends ActivityManagePermission {
             case R.id.ask_multi_activity:
                 startActivity(new Intent(MainActivity.this, ActivityMultiplePermission.class));
                 return true;
-            case R.id.ask_single_fragment :
+            case R.id.ask_single_fragment:
                 startActivity(new Intent(MainActivity.this, ActivityContainer.class));
                 return true;
 //            case R.id.ask_annotation :
 //                startActivity(new Intent(MainActivity.this, ActivityAnnotation.class)); work in progress ;-)
- //               return true;
+            //               return true;
             case R.id.check_permission:
                 startActivity(new Intent(MainActivity.this, ActivityCheckPermission.class));
                 return true;
