@@ -17,13 +17,16 @@ import android.widget.ImageView;
 import permission.auron.com.marshmallowpermissionhelper.ActivityManagePermission;
 import permission.auron.com.marshmallowpermissionhelper.PermissionResult;
 import permission.auron.com.marshmallowpermissionhelper.PermissionUtils;
-import permission.auron.com.marshmallowpermissionhelper.annotation.AskPermission;
 import permission.auron.com.samplemarshmallowpermissionhelper.checkPermission.ActivityCheckPermission;
 
 /**
  * Created by luca on 13/09/16.
  */
-// work in progress
+/*
+ *
+ * Work in progress not use annotation for this library version.
+ *
+ * */
 public class ActivityAnnotation extends ActivityManagePermission {
 
     private static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -56,7 +59,7 @@ public class ActivityAnnotation extends ActivityManagePermission {
 
     }
 
-    @AskPermission(permission = PermissionUtils.Manifest_CAMERA)
+
     private void dispatchTakePictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null)

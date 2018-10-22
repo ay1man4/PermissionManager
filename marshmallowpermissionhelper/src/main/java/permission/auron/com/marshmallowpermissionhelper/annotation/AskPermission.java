@@ -9,10 +9,21 @@ import java.lang.annotation.Target;
  * Created by luca on 14/09/16.
  */
 
+
+/*
+ *
+ * Work in progress not use annotation for this library version.
+ *
+ * */
+
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface AskPermission {
 
-   String permission() default "";
+    String permission();
 
+    boolean callback() default false;
+
+    int key() default 200;
 }

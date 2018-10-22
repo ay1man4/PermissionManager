@@ -41,6 +41,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 
+
+
 /**
  * Created by luca on 2/29/16.
  */
@@ -64,9 +66,11 @@ public class ActivityManagePermission extends AppCompatActivity {
      * @param permission String permission to ask
      * @return boolean true/false
      */
+
     public boolean isPermissionGranted(Context context, String permission) {
         boolean granted = ((Build.VERSION.SDK_INT < Build.VERSION_CODES.M) || (ContextCompat.checkSelfPermission(context, permission) == PackageManager.PERMISSION_GRANTED));
         return granted;
+
     }
 
     /**
@@ -177,11 +181,9 @@ public class ActivityManagePermission extends AppCompatActivity {
 
     public void openSettingsApp(Context context) {
 
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.GINGERBREAD) {
-            Intent intent = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-            intent.setData(Uri.parse("package:" + context.getPackageName()));
-            startActivity(intent);
-        }
+        Intent intent = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+        intent.setData(Uri.parse("package:" + context.getPackageName()));
+        startActivity(intent);
 
 
     }
