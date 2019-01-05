@@ -120,9 +120,10 @@ public class ActivityManagePermission extends AppCompatActivity {
 
     }
 
+    // we need to add super method call in onRequestPermissionsResult to get PermissionResult callbacks on child fragment
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode != KEY_PERMISSION) {
             return;
         }
