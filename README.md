@@ -47,7 +47,7 @@ allprojects {
 ```
 ```Gradle
 dependencies {
- implementation 'com.auron:permission-manage:1.1.7'
+ implementation 'com.auron:permission-manage:1.1.9'
 }
 ```
 
