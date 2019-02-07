@@ -46,7 +46,7 @@ import java.util.List;
 /**
  * Created by luca on 2/29/16.
  */
-@SuppressWarnings({"MissingPermission"})
+//@SuppressWarnings({"MissingPermission"})
 public class ActivityManagePermission extends AppCompatActivity {
 
 
@@ -166,7 +166,6 @@ public class ActivityManagePermission extends AppCompatActivity {
         permissionsAsk = new String[]{permission};
         this.permissionResult = permissionResult;
         internalRequestPermission(permissionsAsk);
-
     }
 
     /**

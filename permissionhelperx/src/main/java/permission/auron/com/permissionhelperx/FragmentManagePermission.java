@@ -1,3 +1,4 @@
+package permission.auron.com.permissionhelperx;
 /*
  * The MIT License (MIT)
  *
@@ -23,8 +24,6 @@
  */
 
 
-package permission.auron.com.marshmallowpermissionhelper;
-
 
 import android.content.Context;
 import android.content.Intent;
@@ -32,14 +31,15 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
+
 import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 
 
 /**
@@ -113,10 +113,8 @@ public class FragmentManagePermission extends Fragment {
 
     }
 
-    // we need to add super method call in onRequestPermissionsResult to get PermissionResult callbacks on child fragment
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         Log.d("LIBRARY","onRequestPermissionsResult");
 
         if (requestCode != KEY_PERMISSION) {
@@ -174,7 +172,7 @@ public class FragmentManagePermission extends Fragment {
 
     public void openSettingsApp(Context context) {
 
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.GINGERBREAD) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
             Intent intent = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
             intent.setData(Uri.parse("package:" + context.getPackageName()));
             startActivity(intent);

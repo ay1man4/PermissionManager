@@ -8,7 +8,7 @@
 	<string name="library_marshmallowpermissionmanager_libraryName">PermissionManager</string>
 	<string name="library_marshmallowpermissionmanager_libraryDescription">Helper to ask runtime permission on android marshmallow</string>
 	<string name="library_marshmallowpermissionmanager_libraryWebsite">https://github.com/RurioLuca/PermissionManager</string>
-	<string name="library_marshmallowpermissionmanager_libraryVersion">1.1.8</string>
+	<string name="library_marshmallowpermissionmanager_libraryVersion">1.1.9</string>
 	<string name="library_marshmallowpermissionmanager_isOpenSource">true</string>
 	<string name="library_marshmallowpermissionmanager_repositoryLink">https://github.com/RurioLuca/PermissionManager</string>
 	<string name="library_marshmallowpermissionmanager_classPath">permission.auron.com.marshmallowpermissionhelper</string>

@@ -113,10 +113,8 @@ public class FragmentManagePermission extends Fragment {
 
     }
 
-    // we need to add super method call in onRequestPermissionsResult to get PermissionResult callbacks on child fragment
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         Log.d("LIBRARY","onRequestPermissionsResult");
 
         if (requestCode != KEY_PERMISSION) {

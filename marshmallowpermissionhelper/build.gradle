@@ -22,9 +22,10 @@
  * SOFTWARE.
  */
 
-apply plugin: 'bintray-release'
-apply plugin: 'com.android.library'
 
+
+apply plugin: 'com.android.library'
+apply plugin: "guru.stefma.bintrayrelease"
 
 
 android {
@@ -34,7 +35,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 10
-        versionName "1.1.8"
+        versionName "1.1.9"
     }
     buildTypes {
 
@@ -46,16 +47,29 @@ android {
 
     }
 
-    publish {
-        userOrg = 'auron'
-        groupId = 'com.auron'
-        artifactId = 'permission-manage'
-        publishVersion = '1.1.8'
-        desc = 'Helper to ask runtime permission'
-        website = 'https://github.com/RurioLuca/PermissionManager'
+    task androidJavadocs(type: Javadoc, dependsOn: 'assembleRelease') {
+        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+        android.libraryVariants.all { variant ->
+            if (variant.name == 'release') {
+               // owner.classpath += variant.javaCompiler.classpath
+            }
+        }
+        source = android.sourceSets.main.java.srcDirs
+       exclude '**/R.html', '**/R.*.html', '**/index.html'
     }
 
 
+    version = "1.1.9"
+    group = "com.auron"
+    androidArtifact { // 2
+        artifactId = "permission-manage"
+    }
+
+    publish {
+        userOrg = 'auron'
+        desc = 'Helper to ask runtime permission'
+        website = 'https://github.com/RurioLuca/PermissionManager'
+    }
 
 }
 

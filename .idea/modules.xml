@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/SampleMarshmallowPermissionHelper.iml" filepath="$PROJECT_DIR$/SampleMarshmallowPermissionHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/marshmallowpermissionhelper/marshmallowpermissionhelper.iml" filepath="$PROJECT_DIR$/marshmallowpermissionhelper/marshmallowpermissionhelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/permissionhelperx/permissionhelperx.iml" filepath="$PROJECT_DIR$/permissionhelperx/permissionhelperx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processor/processor.iml" filepath="$PROJECT_DIR$/processor/processor.iml" />
     </modules>
   </component>
 </project>
