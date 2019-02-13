@@ -10,7 +10,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/RurioLuca/MarshmallowPermissionManager.svg)](https://github.com/RurioLuca/MarshmallowPermissionManager/network) 
 [![GitHub issues](https://img.shields.io/github/issues/RurioLuca/MarshmallowPermissionManager.svg)](https://github.com/RurioLuca/MarshmallowPermissionManager/issues) 
 
-#### Helper to ask runtime permission on android marshmallow and nougat
+#### Helper to ask runtime permission on android marshmallow and more
 
 
 The library takes care themselves to check whether a permit has already been agreed by the user or not.
