@@ -1,3 +1,4 @@
+package permission.auron.com.library;
 /*
  * The MIT License (MIT)
  *
@@ -22,32 +23,15 @@
  * SOFTWARE.
  */
 
+/**
+ * Created by luca on 3/1/16.
+ */
+public interface PermissionResult {
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+    void permissionGranted();
 
+    void permissionDenied();
 
-buildscript {
-    repositories {
-        mavenCentral()
-        google()
-        jcenter()
-    }
+    void permissionForeverDenied();
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.2'
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
-
-allprojects {
-    repositories {
-        mavenCentral()
-        google()
-        jcenter()
-    }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }
